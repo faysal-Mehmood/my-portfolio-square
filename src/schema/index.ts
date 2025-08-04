@@ -1,0 +1,20 @@
+export const skills = [
+  { name: "Python", level: "Advanced" },
+  { name: "JavaScript", level: "Advanced" },
+  { name: "React.js", level: "Intermediate" },
+  { name: "Node.js", level: "Intermediate" },
+  { name: "Next.js", level: "Intermediate" },
+  { name: "C++", level: "Intermediate" },
+  { name: "Machine Learning", level: "Intermediate" },
+  { name: "CSS", level: "Intermediate" },
+  { name: "Blockchain", level: "Beginner" },
+  { name: "AI", level: "Intermediate" },
+];
+export const techStack = [
+  { name: "Python", proficiency: 90 },
+  { name: "JavaScript", proficiency: 85 },
+  { name: "React.js", proficiency: 80 },
+  { name: "Node.js", proficiency: 75 },
+  { name: "Firebase", proficiency: 70 },
+  { name: "Next.js", proficiency: 65 },
+];
