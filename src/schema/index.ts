@@ -18,3 +18,21 @@ export const techStack = [
   { name: "Firebase", proficiency: 70 },
   { name: "Next.js", proficiency: 65 },
 ];
+export const phrases = [
+  "Full Stack Developer",
+  "Frontend Specialist",
+  "Backend Expert",
+  "React & Next.js Developer",
+  "Shopify Developer",
+  "Node.js & Express Developer",
+  "UI/UX Focused Engineer",
+  "AI & ML Enthusiast",
+  "JavaScript & TypeScript Developer",
+  "C++ Programmer",
+  "REST API Architect",
+  "MERN Stack Developer",
+  "Web Performance Optimizer",
+  "Clean Code Advocate",
+  "Tech Explorer",
+  "Agile Development Leader",
+];

@@ -7,13 +7,7 @@ import AnimatedText from "./AnimatedText";
 import { Link } from "react-router-dom";
 import ParticleBackground from "./ParticleBackground";
 import FloatingElements from "./FloatingElements";
-
-const phrases = [
-  "Full Stack Developer",
-  "AI & ML Enthusiast",
-  "Web Developer",
-  "Data Analyst",
-];
+import { phrases } from "@/schema";
 
 const HeroSection = () => {
   const [index, setIndex] = useState(0);
@@ -122,7 +116,7 @@ const HeroSection = () => {
                   backgroundSize: "200% 200%",
                 }}
               >
-                Uday G
+                Faisal Mehmood
               </motion.span>
             </motion.h1>
 
@@ -144,10 +138,10 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Passionate about programming and software development with
-              expertise in Python, JavaScript, and C++. Building modern web
-              applications using Node.js, React.js, and Next.js. Freelancer
-              specializing in AI-powered solutions.
+              Full-stack developer with hands-on experience in React, Next.js,
+              Node.js, and Shopify. Proficient in Python, JavaScript, and
+              Wordpress, with a strong background in building scalable,
+              AI-powered web applications
             </motion.p>
 
             <motion.div
