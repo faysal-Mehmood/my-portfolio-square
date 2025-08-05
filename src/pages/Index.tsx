@@ -12,7 +12,7 @@ import {
   Github,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { skills } from "@/schema";
+import { skills, techStack } from "@/schema";
 import AboutMeSection from "@/components/AboutMeSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import GetInTouchSection from "@/components/GetInTouchSection";
@@ -232,37 +232,31 @@ const Index = () => {
               and solve complex problems.
             </p>
           </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            {skills.map((skill, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            {techStack.map((tech, index) => (
               <motion.div
-                key={skill.name}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.1 * index }}
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0 10px 25px -5px rgba(155, 135, 245, 0.2)",
-                  y: -5,
-                }}
-                className="glass-panel p-6 rounded-lg text-center"
+                key={tech.name}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="glass-panel p-6 rounded-lg"
               >
-                <motion.h3
-                  className="font-semibold mb-2"
-                  whileHover={{ color: "#9b87f5" }}
-                >
-                  {skill.name}
-                </motion.h3>
-                <span
-                  className={`text-xs py-1 px-3 rounded-full ${
-                    skill.level === "Advanced"
-                      ? "bg-brand-purple/20 text-brand-purple"
-                      : skill.level === "Intermediate"
-                      ? "bg-blue-500/20 text-blue-400"
-                      : "bg-green-500/20 text-green-400"
-                  }`}
-                >
-                  {skill.level}
-                </span>
+                <div className="flex justify-between items-center mb-2">
+                  <h3 className="text-lg font-medium">{tech.name}</h3>
+                  <span className="text-sm text-muted-foreground">
+                    {tech.proficiency}%
+                  </span>
+                </div>
+                <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
+                  <motion.div
+                    className="h-full bg-teal-500"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${tech.proficiency}%` }}
+                    transition={{ duration: 1, delay: 0.3 }}
+                    viewport={{ once: true }}
+                  />
+                </div>
               </motion.div>
             ))}
           </div>
