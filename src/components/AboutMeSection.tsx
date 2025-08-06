@@ -6,14 +6,14 @@ import {
   Heart,
   Lightbulb,
   Target,
-  Coffee,
   BookOpen,
-  Gamepad2,
   Music,
   Camera,
   Code2,
   Brain,
   Rocket,
+  Code2Icon,
+  Map,
 } from "lucide-react";
 
 const AboutMeSection = () => {
@@ -39,39 +39,39 @@ const AboutMeSection = () => {
   ];
 
   const interests = [
-    { icon: Coffee, label: "Coffee Enthusiast", color: "text-amber-400" },
+    { icon: Code2Icon, label: "Programming", color: "text-amber-400" },
     { icon: BookOpen, label: "Tech Blogs", color: "text-blue-400" },
-    { icon: Gamepad2, label: "Gaming", color: "text-purple-400" },
     { icon: Music, label: "Music", color: "text-green-400" },
     { icon: Camera, label: "Photography", color: "text-pink-400" },
+    { icon: Map, label: "Traveling", color: "text-purple-400" },
   ];
 
   const journey = [
     {
-      year: "2020",
+      year: "2018",
       title: "Started Coding Journey",
       description:
         "Began learning programming fundamentals and fell in love with problem-solving.",
       icon: Code2,
     },
     {
-      year: "2021",
+      year: "2019",
       title: "Web Development Focus",
       description: "Specialized in React.js and modern web technologies.",
       icon: Brain,
     },
     {
       year: "2022",
+      title: "Full-Stack Developer",
+      description: "Now building end-to-end solutions with modern tech stacks.",
+      icon: Target,
+    },
+    {
+      year: "2025",
       title: "AI & ML Exploration",
       description:
         "Expanded into artificial intelligence and machine learning projects.",
       icon: Rocket,
-    },
-    {
-      year: "2024",
-      title: "Full-Stack Developer",
-      description: "Now building end-to-end solutions with modern tech stacks.",
-      icon: Target,
     },
   ];
 
@@ -125,10 +125,10 @@ const AboutMeSection = () => {
             </span>
           </h2>
           <p className="max-w-3xl mx-auto text-muted-foreground text-lg leading-relaxed">
-            I'm passionate about crafting digital experiences that blend
-            creativity with functionality. With a strong foundation in computer
-            science and a love for emerging technologies, I transform ideas into
-            elegant, efficient solutions.
+            I’m a Full Stack Developer with 5+ years of experience building
+            high-performance web and eCommerce solutions using JavaScript,
+            React, Next.js, Node.js, PostgreSQL, Shopify, CMS integration, AI
+            automation, and WordPress.
           </p>
         </motion.div>
 
@@ -164,10 +164,10 @@ const AboutMeSection = () => {
                 Turning Complex Problems into Simple Solutions
               </h3>
               <p className="text-muted-foreground mb-4">
-                When I'm not coding, you'll find me exploring the latest in AI
-                research, contributing to open-source projects, or experimenting
-                with new frameworks. I believe in continuous learning and
-                staying ahead of the technology curve.
+                I solve complex problems with clean, efficient code. Outside of
+                coding, I explore AI trends, contribute to open-source projects,
+                and experiment with new frameworks always learning to stay ahead
+                of the tech curve and deliver future-ready solutions.
               </p>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {interests.map((interest, index) => (

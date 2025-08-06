@@ -10,80 +10,12 @@ import {
   Play,
   Pause,
 } from "lucide-react";
+import { testimonials } from "@/schema";
 
 const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [cardsPerView, setCardsPerView] = useState(3);
-
-  const testimonials = [
-    {
-      id: 1,
-      name: "Sarah Johnson",
-      role: "Product Manager",
-      company: "TechCorp Solutions",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "Working with this developer was an absolute game-changer for our project. The attention to detail and innovative solutions exceeded all our expectations.",
-      rating: 5,
-      project: "E-commerce Platform",
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      role: "CTO",
-      company: "StartupHub Inc",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "Exceptional technical skills combined with great communication. The machine learning models delivered were accurate and well-documented.",
-      rating: 5,
-      project: "ML Analytics Dashboard",
-    },
-    {
-      id: 3,
-      name: "Emily Rodriguez",
-      role: "Founder",
-      company: "HealthTech Innovations",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "The fraud detection system developed for us has saved our company thousands of dollars. Impressive expertise in AI and security details.",
-      rating: 5,
-      project: "Fraud Detection System",
-    },
-    {
-      id: 4,
-      name: "David Park",
-      role: "Lead Developer",
-      company: "Digital Agency Pro",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "Clean, efficient code and modern development practices. The React applications built were performant and scalable with great collaboration.",
-      rating: 5,
-      project: "Web Application Suite",
-    },
-    {
-      id: 5,
-      name: "Lisa Thompson",
-      role: "Marketing Director",
-      company: "Growth Dynamics",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "Outstanding web development work. Beautiful, responsive designs that converted visitors into customers. Understood our business needs perfectly.",
-      rating: 5,
-      project: "Marketing Website",
-    },
-    {
-      id: 6,
-      name: "James Wilson",
-      role: "Startup Founder",
-      company: "InnovateNow",
-      image: "/placeholder.svg?height=80&width=80",
-      content:
-        "The AI integration was seamless and powerful. Delivered a solution that not only met but exceeded our technical requirements and business goals.",
-      rating: 5,
-      project: "AI-Powered Platform",
-    },
-  ];
 
   // Handle responsive cards per view
   useEffect(() => {

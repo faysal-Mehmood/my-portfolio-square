@@ -27,7 +27,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <div className="fixed inset-0 z-0">
         <ParticleBackground />
       </div>
-      
+
       <Navbar />
       <main className="flex-grow relative z-10">
         {loading ? (
@@ -60,18 +60,23 @@ export const Layout = ({ children }: LayoutProps) => {
           </AnimatePresence>
         )}
       </main>
-      
+
       <footer className="w-full py-8 border-t border-muted relative z-10 backdrop-blur-md bg-black/20">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <div className="text-2xl font-bold text-brand-purple mb-2">UG.</div>
+              <div className="text-2xl font-bold text-brand-purple mb-2">
+                FM.
+              </div>
               <p className="text-muted-foreground text-sm max-w-md">
-                Building innovative digital solutions with a focus on clean, efficient code and exceptional user experiences.
+                Building innovative digital solutions with a focus on clean,
+                efficient code and exceptional user experiences.
               </p>
             </div>
             <div className="flex flex-col items-center md:items-end">
-              <p className="text-foreground font-medium mb-3">Connect with me</p>
+              <p className="text-foreground font-medium mb-3">
+                Connect with me
+              </p>
               <div className="flex space-x-4">
                 <motion.a
                   href="https://github.com/oxBinaryBrain/"
@@ -119,7 +124,7 @@ export const Layout = ({ children }: LayoutProps) => {
             </div>
           </div>
           <div className="text-muted-foreground text-sm text-center mt-8">
-            © {new Date().getFullYear()} Uday G. All rights reserved.
+            © {new Date().getFullYear()} Faisal M. All rights reserved.
           </div>
         </div>
       </footer>

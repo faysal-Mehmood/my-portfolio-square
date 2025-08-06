@@ -5,14 +5,15 @@ import { motion } from "framer-motion";
 import {
   ArrowRight,
   Code,
-  GraduationCap,
-  Briefcase,
-  Star,
-  ExternalLink,
   Github,
+  Store,
+  Database,
+  MonitorSmartphone,
+  ShoppingBag,
+  Brain,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { skills, techStack } from "@/schema";
+import { featuredProjects, techStack } from "@/schema";
 import AboutMeSection from "@/components/AboutMeSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import GetInTouchSection from "@/components/GetInTouchSection";
@@ -21,39 +22,6 @@ const Index = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const featuredProjects = [
-    {
-      title: "Income Tax Fraud Detection",
-      description:
-        "A system to detect fraudulent activities in income tax filings using AI and machine learning.",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-      tags: ["Python", "Machine Learning", "AI"],
-      link: "/projects",
-      code: "https://github.com/oxBinaryBrain/An_Income_Tax_Fraud_Detection_Using_AI-ML",
-    },
-    {
-      title: "Oral Cancer Classification using Neural Networks",
-      description:
-        "Machine learning model to detect and classify oral cancer levels from images.",
-      image:
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-      tags: ["Python", "TensorFlow", "Neural Networks"],
-      link: "/projects",
-      code: "https://github.com/oxBinaryBrain/Oral_Cancer_Classification",
-    },
-    {
-      title: "Credit Card Fraud Detection",
-      description:
-        "Machine learning model to analyze whether a credit card transaction is fraudulent or not.",
-      image:
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-      tags: ["Python", "ML", "Data Science"],
-      link: "/projects",
-      code: "https://github.com/oxBinaryBrain/CC-Fraud-Detection",
-    },
-  ];
 
   return (
     <Layout>
@@ -74,9 +42,9 @@ const Index = () => {
             </span>
             <h2 className="text-4xl font-bold mb-6">Our Services</h2>
             <p className="max-w-3xl mx-auto text-muted-foreground">
-              I'm a software developer specializing in web development and AI. I
-              build modern, responsive applications and integrate smart features
-              using the latest technologies.
+              I offer fast, scalable web, mobile, and eCommerce solutions with
+              AI-powered automation to bring your ideas to life and streamline
+              your business using cutting-edge technologies.
             </p>
           </motion.div>
 
@@ -95,8 +63,8 @@ const Index = () => {
                 Web Development
               </h3>
               <p className="text-muted-foreground text-center">
-                Experienced in building modern, responsive web applications
-                using React.js, Next.js, and Node.js.
+                Expert in building modern, responsive web applications using
+                React.js, Next.js, and Node.js.
               </p>
             </motion.div>
 
@@ -108,14 +76,14 @@ const Index = () => {
               className="glass-panel p-8 rounded-lg"
             >
               <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
-                <GraduationCap className="w-8 h-8 text-teal-400" />
+                <Store className="w-8 h-8 text-teal-400" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-center">
-                Computer Science
+                Shopify Development
               </h3>
               <p className="text-muted-foreground text-center">
-                Strong foundation in algorithms, data structures, and
-                programming principles.
+                Custom Shopify store development optimized for performance, SEO,
+                and conversions.
               </p>
             </motion.div>
 
@@ -127,14 +95,52 @@ const Index = () => {
               className="glass-panel p-8 rounded-lg"
             >
               <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
-                <Briefcase className="w-8 h-8 text-teal-400" />
+                <Database className="w-8 h-8 text-teal-400" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-center">
-                AI & Machine Learning
+                WordPress & CMS Integration
               </h3>
               <p className="text-muted-foreground text-center">
-                Specializing in artificial intelligence and machine learning
-                algorithms and applications.
+                Seamless integration and customization of WordPress and other
+                content management systems.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="glass-panel p-8 rounded-lg"
+            >
+              <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
+                <MonitorSmartphone className="w-8 h-8 text-teal-400" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-center">
+                Mobile App Development
+              </h3>
+              <p className="text-muted-foreground text-center">
+                Cross-platform mobile applications with intuitive UI and smooth
+                performance.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="glass-panel p-8 rounded-lg"
+            >
+              <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
+                <ShoppingBag className="w-8 h-8 text-teal-400" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-center">
+                E-commerce Solutions
+              </h3>
+              <p className="text-muted-foreground text-center">
+                Full-featured eCommerce platforms tailored to your business
+                needs using Shopify or WordPress.
               </p>
             </motion.div>
             <motion.div
@@ -145,52 +151,14 @@ const Index = () => {
               className="glass-panel p-8 rounded-lg"
             >
               <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
-                <Code className="w-8 h-8 text-teal-400" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-center">
-                Web Development
-              </h3>
-              <p className="text-muted-foreground text-center">
-                Experienced in building modern, responsive web applications
-                using React.js, Next.js, and Node.js.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="glass-panel p-8 rounded-lg"
-            >
-              <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
-                <GraduationCap className="w-8 h-8 text-teal-400" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4 text-center">
-                Computer Science
-              </h3>
-              <p className="text-muted-foreground text-center">
-                Strong foundation in algorithms, data structures, and
-                programming principles.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="glass-panel p-8 rounded-lg"
-            >
-              <div className="flex items-center justify-center w-16 h-16 bg-teal-500/10 rounded-lg mb-6 mx-auto">
-                <Briefcase className="w-8 h-8 text-teal-400" />
+                <Brain className="w-8 h-8 text-teal-400" />
               </div>
               <h3 className="text-xl font-semibold mb-4 text-center">
                 AI & Machine Learning
               </h3>
               <p className="text-muted-foreground text-center">
-                Specializing in artificial intelligence and machine learning
-                algorithms and applications.
+                Integration of smart features using machine learning models and
+                AI-powered automation.
               </p>
             </motion.div>
           </div>
@@ -228,11 +196,11 @@ const Index = () => {
             </span>
             <h2 className="text-4xl font-bold mb-6">Tech Stack</h2>
             <p className="max-w-3xl mx-auto text-muted-foreground">
-              A collection of technologies I work with to build web applications
-              and solve complex problems.
+              A collection of powerful technologies I use to build modern
+              software applications and solve complex problems efficiently.
             </p>
           </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8  mx-auto">
             {techStack.map((tech, index) => (
               <motion.div
                 key={tech.name}
@@ -278,7 +246,9 @@ const Index = () => {
             </span>
             <h2 className="text-4xl font-bold mb-6">Featured Projects</h2>
             <p className="max-w-3xl mx-auto text-muted-foreground">
-              A selection of my recent web development and programming projects.
+              A curated selection of my latest web development, eCommerce, and
+              automation projects—highlighting real-world solutions, clean code,
+              and modern technologies.
             </p>
           </motion.div>
 

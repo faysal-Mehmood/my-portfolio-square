@@ -19,16 +19,16 @@ const About = () => {
   }, []);
 
   const skills = [
-    { name: "Python", level: "Advanced" },
+    { name: "Next.js", level: "Advanced" },
+    { name: "Shopify", level: "Intermediate" },
     { name: "JavaScript", level: "Advanced" },
-    { name: "React.js", level: "Intermediate" },
-    { name: "Node.js", level: "Intermediate" },
-    { name: "Next.js", level: "Intermediate" },
-    { name: "C++", level: "Intermediate" },
-    { name: "Machine Learning", level: "Intermediate" },
-    { name: "CSS", level: "Intermediate" },
+    { name: "React.js", level: "Advanced" },
+    { name: "Python", level: "Intermediate" },
+    { name: "Wordpress", level: "Advanced" },
+    { name: "CSS", level: "Advanced" },
     { name: "Blockchain", level: "Beginner" },
     { name: "AI", level: "Intermediate" },
+    { name: "Node.js", level: "Intermediate" },
   ];
 
   return (
@@ -49,8 +49,9 @@ const About = () => {
             </h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-muted-foreground">
-                I'm a Computer Science student passionate about creating
-                innovative solutions through programming and technology.
+                I'm a passionate Software Developer focused on building scalable
+                web applications and solving real-world problems with modern
+                technologies.
               </p>
             </div>
           </motion.div>
@@ -92,10 +93,13 @@ const About = () => {
                     className="text-brand-purple font-semibold"
                     whileHover={{ color: "#8B5CF6" }}
                   >
-                    Uday G
+                    Faisal Mehmood{" "}
                   </motion.span>
-                  , a Computer Science student specializing in AI & Machine
-                  Learning at Presidency University, Bengaluru.
+                  a Software Developer with a degree in Computer Science from
+                  Uog, Gujrat, specializing in Software Development, AI &
+                  Machine Learning. I'm a full-time freelancer working on
+                  large-scale projects and also collaborate with Ahdus
+                  Technology to deliver innovative digital solutions.
                 </p>
                 <p>
                   My journey in programming began with an interest in solving
@@ -221,7 +225,7 @@ const About = () => {
               <InfoCard icon={GraduationCap} title="Education Journey">
                 <ul className="space-y-2 text-muted-foreground">
                   {[
-                    "Computer Science fundamentals",
+                    "Computer Science Advanced",
                     "Data structures and algorithms",
                     "Machine learning and AI",
                     "Self-taught web development",

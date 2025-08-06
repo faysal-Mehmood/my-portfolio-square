@@ -42,7 +42,7 @@ const ContactSection = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+923406018013",
       color: "text-teal-400",
     },
     {
@@ -54,7 +54,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@yourname.com",
+      value: "faysal.mehmood101@gmail.com",
       color: "text-green-400",
     },
   ];
@@ -197,7 +197,7 @@ const ContactSection = () => {
               Email Me
             </h3>
             <p className="text-muted-foreground text-sm relative z-10 group-hover:text-white/80 transition-colors">
-              hello@yourname.com
+              faysal.mehmood101@gmail.com
             </p>
             <ArrowRight className="w-6 h-6 text-teal-400 mt-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all relative z-10" />
           </motion.a>
@@ -205,6 +205,7 @@ const ContactSection = () => {
           {/* Schedule Call Circle Card */}
           <motion.a
             href="https://calendly.com/yourname"
+            target="_blank"
             className="relative group flex flex-col items-center justify-center w-64 h-64 rounded-full bg-gradient-to-br from-brand-purple/10 to-purple-500/10 backdrop-blur-md border border-white/10 shadow-xl overflow-hidden"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}

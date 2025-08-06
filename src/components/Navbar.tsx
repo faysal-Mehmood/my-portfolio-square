@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -65,9 +64,14 @@ const Navbar = () => {
     },
   };
 
-  const bgClass = theme === "dark" 
-    ? (isScrolled ? "py-3 bg-brand-dark/90 backdrop-blur-md shadow-md" : "py-5") 
-    : (isScrolled ? "py-3 bg-white/90 backdrop-blur-md shadow-md" : "py-5");
+  const bgClass =
+    theme === "dark"
+      ? isScrolled
+        ? "py-3 bg-brand-dark/90 backdrop-blur-md shadow-md"
+        : "py-5"
+      : isScrolled
+      ? "py-3 bg-white/90 backdrop-blur-md shadow-md"
+      : "py-5";
 
   return (
     <header>
@@ -85,7 +89,7 @@ const Navbar = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              UG.
+              FM.
             </motion.span>
           </NavLink>
 
@@ -119,7 +123,11 @@ const Navbar = () => {
               aria-label="Menu"
               className="p-2 text-foreground"
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </motion.button>
           </div>
         </div>
