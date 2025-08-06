@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
@@ -16,44 +15,45 @@ const Academics = () => {
     {
       id: 1,
       institution: "Presidency University, Bengaluru",
-      degree: "Bachelor of Technology (B.Tech)",
-      field: "Computer Science & Engineering (Specialization in AI & ML)",
-      duration: "2021 - Present",
-      location: "Bengaluru, Karnataka",
+      degree: "Bachelor of Computer Science (BS.CS)",
+      field: "Computer Science & Engineering ",
+      duration: "2016 - 2020",
+      location: "Gurjat, Pakistan",
       cgpa: "In Progress",
       details: [
-        "Specializing in Artificial Intelligence and Machine Learning",
+        "Specializing in Software development and Machine Learning",
         "Key courses include Data Structures, Algorithms, Machine Learning",
-        "Actively participating in research projects related to AI/ML"
-      ]
+        "Actively participating in research projects related to AI/ML",
+      ],
     },
     {
       id: 2,
-      institution: "MES Kishora Kendra",
+      institution: "KRMC",
       degree: "Pre-University College",
-      field: "Science Stream",
-      duration: "2019 - 2021",
-      location: "Bengaluru, Karnataka",
+      field: "Pre-Engineering",
+      duration: "2014 - 2016",
+      location: "Pakistan",
       cgpa: "8.5",
       details: [
         "Major subjects included Physics, Mathematics, Chemistry, Computer Science",
         "Highlights: Advanced Mathematics & Computer Science",
-        "Developed strong foundation in scientific principles and programming"
-      ]
+        "Developed strong foundation in scientific principles and programming",
+      ],
     },
     {
       id: 3,
-      institution: "Nelamangala, Bengaluru",
+      institution: "Royal College, Bhimber",
       degree: "Secondary High School",
-      field: "NCERT-based Curriculum",
-      duration: "2012 - 2019",
-      location: "Bengaluru, Karnataka",
+      field: "SNC Curriculum",
+      duration: "2012 - 2014",
+      location: "Bhimber, Pakistan",
       cgpa: "9.09",
       details: [
-        "Strong foundation in Science",
-        "Studied foundations of Mathematics"
-      ]
-    }
+        "Focused on core science and mathematics subjects",
+        "Studied under Pakistan's SNC curriculum",
+        "Achieved strong academic performance",
+      ],
+    },
   ];
 
   const certifications = [
@@ -62,29 +62,33 @@ const Academics = () => {
       name: "Python Programming",
       issuer: "Coursera",
       date: "2022",
-      description: "Comprehensive course covering advanced Python concepts and applications."
+      description:
+        "Comprehensive course covering advanced Python concepts and applications.",
     },
     {
       id: 2,
       name: "Web Development with JavaScript",
       issuer: "Udemy",
       date: "2022",
-      description: "In-depth training on building modern web applications using JavaScript."
+      description:
+        "In-depth training on building modern web applications using JavaScript.",
     },
     {
       id: 3,
       name: "Machine Learning Fundamentals",
       issuer: "edX",
       date: "2023",
-      description: "Introduction to machine learning algorithms and their implementation."
+      description:
+        "Introduction to machine learning algorithms and their implementation.",
     },
     {
       id: 4,
       name: "React.js Development",
       issuer: "freeCodeCamp",
       date: "2023",
-      description: "Building interactive user interfaces with React.js framework."
-    }
+      description:
+        "Building interactive user interfaces with React.js framework.",
+    },
   ];
 
   const courseHighlights = [
@@ -97,7 +101,7 @@ const Academics = () => {
     "Web Technologies",
     "Software Engineering",
     "Cloud Computing",
-    "Blockchain Technology"
+    "C++",
   ];
 
   return (
@@ -118,7 +122,8 @@ const Academics = () => {
             </h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-muted-foreground">
-                My academic journey, courses, and educational achievements that have shaped my technical expertise.
+                My academic journey, courses, and educational achievements that
+                have shaped my technical expertise.
               </p>
             </div>
           </motion.div>
@@ -156,18 +161,22 @@ const Academics = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.7 }}
-            whileHover={{ boxShadow: "0 20px 25px -5px rgba(155, 135, 245, 0.1)" }}
+            whileHover={{
+              boxShadow: "0 20px 25px -5px rgba(155, 135, 245, 0.1)",
+            }}
             className="mb-24"
           >
-            <h2 className="text-3xl font-bold mb-12 text-center">Key Courses</h2>
-            
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              Key Courses
+            </h2>
+
             <div className="glass-panel p-10 rounded-lg">
               <div className="flex items-center justify-center mb-8">
                 <div className="bg-teal-500/10 p-4 rounded-full">
                   <BookOpen className="h-8 w-8 text-teal-400" />
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {courseHighlights.map((course, index) => (
                   <motion.div
@@ -175,10 +184,10 @@ const Academics = () => {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3, delay: 0.8 + index * 0.05 }}
-                    whileHover={{ 
-                      scale: 1.05, 
-                      backgroundColor: "rgba(155, 135, 245, 0.2)", 
-                      color: "#9b87f5"
+                    whileHover={{
+                      scale: 1.05,
+                      backgroundColor: "rgba(155, 135, 245, 0.2)",
+                      color: "#9b87f5",
                     }}
                     className="flex items-center p-4 bg-secondary/50 rounded-lg"
                   >
@@ -196,11 +205,13 @@ const Academics = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.9 }}
           >
-            <h2 className="text-3xl font-bold mb-12 text-center">Certifications</h2>
-            
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              Certifications
+            </h2>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {certifications.map((cert, index) => (
-                <CertificationCard 
+                <CertificationCard
                   key={cert.id}
                   name={cert.name}
                   issuer={cert.issuer}
