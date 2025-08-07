@@ -14,7 +14,7 @@ import {
   Brain,
   BarChart,
 } from "lucide-react";
-import { projects } from "@/schema";
+import { allProjects, projects } from "@/schema";
 
 const Projects = () => {
   useEffect(() => {
@@ -43,7 +43,7 @@ const Projects = () => {
     }
   };
 
-  const filteredProjects = projects.filter((project) => {
+  const filteredProjects = allProjects.filter((project) => {
     const matchesFilter = filter === "all" || project.category === filter;
     const matchesSearch =
       project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||

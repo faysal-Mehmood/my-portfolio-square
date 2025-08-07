@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
@@ -7,19 +6,19 @@ const PrintableResume = () => {
   const handleDownload = () => {
     // Create a link element
     const link = document.createElement("a");
-    
+
     // Set the href to the resume PDF in the public folder
     link.href = "/resume.pdf";
-    
+
     // Set the download attribute to suggest a filename
-    link.download = "uday-g-resume.pdf";
-    
+    link.download = "Faisal-Mehmood-Resume.pdf";
+
     // Append the link to the document
     document.body.appendChild(link);
-    
+
     // Trigger the click event
     link.click();
-    
+
     // Remove the link from the document
     document.body.removeChild(link);
   };
