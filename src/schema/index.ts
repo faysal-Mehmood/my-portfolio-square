@@ -41,34 +41,31 @@ export const phrases = [
 ];
 export const featuredProjects = [
   {
-    title: "Income Tax Fraud Detection",
+    title: "Ledgrix – Business Accounting Platform",
     description:
-      "A system to detect fraudulent activities in income tax filings using AI and machine learning.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-    tags: ["Python", "Machine Learning", "AI"],
-    link: "/projects",
-    code: "https://github.com/oxBinaryBrain/An_Income_Tax_Fraud_Detection_Using_AI-ML",
+      "Developed a modern, secure accounting and financial management platform for enterprises. Features include invoicing, real-time reporting, VAT support, and audit-ready ledger tracking.",
+    image: "/uploads/ledgrix.png",
+    tags: ["Next.js", "Node.js", "Directus", "TypeScript"],
+    link: "https://www.ledgrix.com/",
+    code: "",
   },
   {
-    title: "Oral Cancer Classification using Neural Networks",
+    title: "E-square – IT Infrastructure",
     description:
-      "Machine learning model to detect and classify oral cancer levels from images.",
-    image:
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-    tags: ["Python", "TensorFlow", "Neural Networks"],
-    link: "/projects",
-    code: "https://github.com/oxBinaryBrain/Oral_Cancer_Classification",
+      "Built a responsive corporate website for a leading UAE IT infrastructure provider. Integrated service listings and customer engagement modules with a mobile-first approach.",
+    image: "/uploads/esquare.webp",
+    tags: ["Html", "Tailwind CSS", "SEO", "Javascript"],
+    link: "https://esquare.ae/",
+    code: "",
   },
   {
-    title: "Credit Card Fraud Detection",
+    title: "B2C – Client Dashboard UI",
     description:
-      "Machine learning model to analyze whether a credit card transaction is fraudulent or not.",
-    image:
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
-    tags: ["Python", "ML", "Data Science"],
-    link: "/projects",
-    code: "https://github.com/oxBinaryBrain/CC-Fraud-Detection",
+      "Designed and developed a secure dashboard UI for a gold investment platform. Includes sections for transaction history, gold savings plans, contract data, and downloadable reports.",
+    image: "/uploads/goldrente.png",
+    tags: ["Next", "Figma to Code", "Api Integeration", "Tailwind"],
+    link: "https://geiger-gsp-austria.vercel.app/",
+    code: "",
   },
 ];
 
@@ -139,5 +136,88 @@ export const testimonials = [
       "Faisal is no doubt excellent fronted developer. we are very happy to have such an great asset to our core team. Additionally, he is very flexible and adhere to deadlines very well.",
     rating: 5,
     project: "Frontend Development With Api Integeration",
+  },
+];
+export const projects = [
+  {
+    id: 1,
+    title: "Cyscale – Cloud Security Platform",
+    description:
+      "Contributed to a cloud-native cybersecurity platform enabling businesses to visualize, monitor, and secure their cloud environments. Worked on dashboard UI, compliance workflows, and cloud integration features.",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    tags: ["React", "TypeScript", "Cloud Security", "SaaS"],
+    link: "",
+    code: "",
+    category: "web",
+  },
+  {
+    id: 2,
+    title: "Strum – Social Music Sharing App",
+    description:
+      "Built a music-sharing web app where users can upload, play, and discover audio clips. Implemented real-time features including user authentication, audio streaming, and interactive UI components.",
+    image:
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80",
+    tags: ["React", "Firebase", "Tailwind CSS", "Netlify"],
+    link: "https://strum-app.netlify.app/",
+    code: "",
+    category: "web",
+  },
+  {
+    id: 3,
+    title: "PopStack – AI Marketing Automation",
+    description:
+      "Contributed to a no-code platform that automates marketing workflows using AI. Focused on frontend performance, user experience optimization, and integrating intelligent content generation tools.",
+    image:
+      "https://plus.unsplash.com/premium_photo-1681426687411-21986b0626a8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    tags: ["Next.js", "AI", "TypeScript", "SaaS"],
+    link: "https://www.popstack.ai/",
+    code: "",
+    category: "ai",
+  },
+  {
+    id: 4,
+    title: "Era of We – Coffee Ecosystem",
+    description:
+      "Worked on a B2B coffee supply chain platform connecting producers and roasters. Implemented dashboards, role-based authentication, and multi-language support for global stakeholders.",
+    image:
+      "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+    tags: ["React", "GraphQL", "Multi-tenant", "B2B"],
+    link: "https://www.eraofwe.com/",
+    code: "",
+    category: "web",
+  },
+  {
+    id: 5,
+    title: "Ledgrix – Accounting SaaS",
+    description:
+      "Developed a secure financial platform offering features like invoicing, real-time reports, VAT calculation, and audit tracking. Handled frontend/backend integration and Directus-based CMS.",
+    image: "/uploads/ledgrix.png",
+    tags: ["Next.js", "Node.js", "Directus", "TypeScript"],
+    link: "https://www.ledgrix.com/",
+    code: "",
+    category: "web",
+  },
+  {
+    id: 6,
+    title: "E-Square – Corporate Website",
+    description:
+      "Built a responsive company website for a UAE-based IT provider. Delivered a mobile-first interface, optimized SEO structure, and integrated dynamic content sections.",
+    image: "/uploads/esquare.webp",
+    tags: ["HTML", "Tailwind CSS", "SEO", "JavaScript"],
+    link: "https://esquare.ae/",
+    code: "",
+    category: "web",
+  },
+  {
+    id: 7,
+    title: "GoldRente – Client Dashboard UI",
+    description:
+      "Designed and developed a secure dashboard UI for a gold investment platform. Features include contract overviews, downloadable reports, and transaction history tracking.",
+    image: "/uploads/goldrente.png",
+    tags: ["Next.js", "Figma to Code", "API Integration", "Tailwind CSS"],
+    link: "https://geiger-gsp-austria.vercel.app/",
+    code: "",
+    category: "web",
   },
 ];

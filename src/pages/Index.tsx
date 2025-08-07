@@ -255,12 +255,15 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {featuredProjects.map((project, index) => (
               <motion.div
-                key={project.title}
+                key={project.title + index}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="glass-panel rounded-lg overflow-hidden"
+                animate={{ opacity: 1, y: 0 }}
+                whileHover={{
+                  y: -10,
+                  boxShadow: "0 20px 25px -5px rgba(155, 135, 245, 0.3)",
+                }}
+                transition={{ duration: 0.4 }}
+                className="glass-panel rounded-lg overflow-hidden flex flex-col"
               >
                 <div className="h-48 overflow-hidden">
                   <img
